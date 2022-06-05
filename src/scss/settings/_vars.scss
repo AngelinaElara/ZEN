@@ -1,0 +1,25 @@
+/* Переменные _vars.scss */
+
+// breakpoints
+$md: 768px;
+$lg: 1152px;
+$xl: 1440px;
+ 
+// max-width 
+$max-width-md: 690px;
+$max-width-lg: 930px;
+$max-width-xl: 1110px;
+
+// fonts
+$font-family: 'Nunito', sans-serif;
+
+// heights
+$height-header-xs: 50px;
+
+// z-index
+$z-index-header: 10;
+$z-index-modal: 11;
+
+// color
+$white: #fff;
+$black: #000;

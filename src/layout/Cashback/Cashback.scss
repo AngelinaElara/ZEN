@@ -1,0 +1,123 @@
+$md: 768px;
+$lg: 1152px;
+$xl: 1440px;
+
+$white: #fff;
+$black: #000;
+
+.cashback {
+  padding: 30px 0;
+
+  &__body {
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+    margin: 0 auto;
+  
+    @media(min-width: $md) {
+      width: 460px;
+      text-align: center;
+      align-items: center;
+    }
+  
+    @media(min-width: $lg) {
+      width: 500px;
+    }
+  
+    @media(min-width: $xl) {
+      width: 580px;
+    }
+  }
+
+  &__title {
+    font-size: 26px;
+    font-weight: bold;
+    line-height: 140%;
+    margin-bottom: 10px;
+    
+    @media(min-width: $md) {
+      font-size: 30px;
+    }
+    
+    @media(min-width: $lg) {
+      font-size: 34px;
+    }
+    
+    @media(min-width: $xl) {
+      font-size: 40px;
+    }
+  }
+
+  &__copy {
+    margin-top: 10px;
+    
+    @media(min-width: $md) {
+      font-size: 16px;
+    }
+
+    @media(min-width: $lg) {
+      font-size: 18px;
+    }
+
+    @media(min-width: $xl) {
+      margin-top: 20px;
+      font-size: 20px;
+    }
+  }
+
+  &__btn {
+    position: relative;
+    margin-top: 20px;
+    width: 290px;
+    height: 50px;
+    border: 1px solid #AAA;
+    border-radius: 30px;
+    font-size: 16px;
+    font-weight: 400; 
+    margin: 20px auto 0 auto;  
+
+    @media(min-width: $md) {
+      width: 225px;
+      height: 50px;
+      margin-bottom: 50px;
+    } 
+
+    @media(min-width: $lg) {
+      position: relative;
+      width: 250px;
+      height: 55px;
+      margin-bottom: 40px;
+      font-size: 18px;
+      overflow: hidden;
+      transition: all 0.4s;
+
+      &::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: -100%;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+        background: #AAA;
+        transition: left 0.4s;
+      }
+    
+      &:hover {
+        color: $white;
+
+        &::after {
+          left: 0;
+        }
+      }
+    }
+
+    @media(min-width: $xl) {
+      width: 290px;
+      height: 70px;
+      margin-top: 30px;
+      margin-bottom: 50px;
+      font-size: 20px;
+    }
+  }
+}

@@ -1,0 +1,47 @@
+$md: 768px;
+$lg: 1152px;
+$xl: 1440px;
+
+$white: #fff;
+$black: #000;
+
+.clients {
+
+  &__body {
+    margin-top: 30px;
+    margin-bottom: 30px;
+
+    @media(min-width: $lg) {
+      margin-top: 40px;
+      margin-bottom: 40px;
+    }
+
+    @media(min-width: $xl) {
+      margin-top: 50px;
+      margin-bottom: 50px;
+    }
+  }
+
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    column-gap: 30px;
+    row-gap: 30px;
+    justify-items: center;
+  
+    @media(min-width: $md) {
+      grid-template-columns: repeat(4, 1fr);
+      grid-template-rows: repeat(2, 1fr);
+    }
+
+    @media(min-width: $xl) {
+      grid-template-columns: repeat(5, 1fr);
+      grid-template-rows: repeat(2, 1fr);
+    }
+  }
+
+  img {
+    width: 100%;
+  }
+}
